@@ -1,0 +1,20 @@
+{
+	id: "134F25FFD605AB12"
+	order_index: 0
+	title: "class_select"
+	loot_size: 1
+	rewards: [
+		{
+			title: "Воин"
+			auto: "invisible"
+			stage: "warrior1"
+			type: "gamestage"
+		}
+		{
+			title: "Маг"
+			auto: "invisible"
+			stage: "mage1"
+			type: "gamestage"
+		}
+	]
+}

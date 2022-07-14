@@ -1,0 +1,74 @@
+{
+	id: "55D3B717A1C903E1"
+	group: ""
+	order_index: 0
+	filename: "hui"
+	title: "Hui"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -1.5d
+			id: "47D32A0B80AB6D16"
+			tasks: [{
+				id: "1E5ED6EB41F775CF"
+				type: "checkmark"
+				title: "Just check it"
+			}]
+			rewards: [{
+				id: "69862264D963B31B"
+				type: "choice"
+				table_id: 1391372590618356498L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["47D32A0B80AB6D16"]
+			hide: true
+			hide_text_until_complete: true
+			id: "442BC67D5DE0BD5E"
+			tasks: [{
+				id: "1C969436E1F6ADCB"
+				type: "gamestage"
+				title: "Колдун"
+				stage: "mage1"
+			}]
+			rewards: [{
+				id: "1EA612B608AF21C3"
+				type: "item"
+				item: {
+					id: "ars_nouveau:caster_tome"
+					Count: 1b
+					tag: {
+						flavor: "Teleportation, with style!"
+						color: "255,25,180"
+						spell_0: "[projectile, blink, explosion, aoe]"
+						display: {
+							Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Warp Impact\"}"
+						}
+						current_slot: 0
+						max_slot: 1
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["47D32A0B80AB6D16"]
+			hide: true
+			hide_text_until_complete: true
+			id: "2AA57327477A8D21"
+			tasks: [{
+				id: "31867738312F23C4"
+				type: "gamestage"
+				title: "Воин"
+				stage: "warrior1"
+			}]
+		}
+	]
+}
